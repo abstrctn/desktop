@@ -1,5 +1,5 @@
 build:
-	docker build -t desktop .
+	docker build -t desktop-latest .
 
 create:
 	make build

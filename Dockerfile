@@ -9,8 +9,7 @@ RUN \
   mkdir -p /etc/secret-volume && \
   cd /usr/local/bin && \
   wget -q https://github.com/newsdev/kubernetes-secret-env/releases/download/$KUBERNETES_SECRET_ENV_VERSION/kubernetes-secret-env && \
-  chmod +x kubernetes-secret-env && \
-  apk del ca-certificates
+  chmod +x kubernetes-secret-env
 
 RUN rm -rf /root
 WORKDIR /root
