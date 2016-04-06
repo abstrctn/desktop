@@ -1,7 +1,7 @@
 build:
 	docker build -t desktop-latest .
 
-create:
+release:
 	make build
 	docker tag -f desktop-latest abstrctn/desktop:latest && docker push abstrctn/desktop:latest
 
